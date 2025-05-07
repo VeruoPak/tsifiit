@@ -8,8 +8,8 @@ export default class About extends Component {
         return (
             <Container>
             <div className="flex gap-6 mb-6 md:grid-cols-2">
-                <Input color='primary' size='large' title=''/>
-                <Input color='secondary' size='large' title=''/>                
+                <Input color='primary' size='large' title='None'/>
+                <Input color='secondary' size='large' title='Hi'/>                
             </div> 
             </Container>
         );
