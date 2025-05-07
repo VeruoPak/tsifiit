@@ -4,11 +4,14 @@ class Header extends PureComponent {
     
     render() {
         return (
-            <>
-            <a href='/' className='bg-green-500 text-lg'>Главная </a>
-            <a href='/blog' className='bg-green-500 text-lg'>Блог </a>
-            <a href='/about' className='bg-green-500 text-lg'> О нас </a>
-            </>
+            <div className="bg-fuchsia-300 py-2.5">
+            <div>
+                <a href='/' className='bg-amber-50 text-2xl'>Главная </a>
+                <a href='/blog' className='bg-amber-50 text-2xl'>Блог </a>
+                <a href='/about' className='bg-amber-50 text-2xl'> О нас </a>
+                <a href='/cart' className='bg-amber-50 text-2xl'>Корзина </a>
+            </div>
+            </div>
         )
     }
 }
