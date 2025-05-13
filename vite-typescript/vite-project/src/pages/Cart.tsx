@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import { Component } from "react";
 import { Container } from "../components/Container";
 import { Button } from "../components/Button";
+import { Helmet } from "react-helmet";
 
 
 interface CartProps {}
@@ -76,6 +77,11 @@ const Counter: React.FC = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>Корзина</title>
+          <meta name="description" content="Корзина"></meta>
+          <meta name="keywords" content="Корзина товаров"></meta>
+      </Helmet>
       <div className="flex flex-col gap-4 items-center justify-center">
         <div>
           <form onSubmit={handleSubmit} className="mb-4">

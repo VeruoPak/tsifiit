@@ -3,6 +3,7 @@ import type {ReactNode} from 'react';
 import { Component } from "react";
 import { Container } from "../components/Container";
 import { Input } from "../components/Input";
+import { Helmet } from "react-helmet";
 export const About = () => {
   //render(): ReactNode {
     const [data, setData] = useState<{ title: string; description: string; cost: string } | null>(
@@ -22,6 +23,11 @@ export const About = () => {
     }, []);
     return (
       <Container>
+        <Helmet>
+        <title>Страница о нас</title>
+          <meta name="description" content="Страница о нас"></meta>
+          <meta name="keywords" content="Контакты, ключевые слова для SEO"></meta>
+        </Helmet>
         <div>
           <h1>Заголовок</h1>
           {data ? (
